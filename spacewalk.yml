@@ -1,0 +1,10 @@
+- hosts: nm-spacewalk.nascom.nasa.gov
+  remote_user: root
+
+  roles:
+    - { role: epel}
+    - { role: spacewalk-repo}
+    - { role: java}
+    - { role: postgres}
+    - { role: spacewalk}
+

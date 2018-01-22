@@ -1,0 +1,6 @@
+---
+- name: Enable HTTPS
+  firewalld:
+    service: https
+    permanent: true
+    state: enabled
